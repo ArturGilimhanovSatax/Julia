@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: Futura;
+    font-size: 50px;
+    color: #FFF;
+    text-transform: uppercase;
+    &_p{
+        color: #504178;
+    }
+}
+
+.text{
+    font-family: Futura;
+    font-size: 20px;
+    color: #FFF;
+    text-transform: uppercase;
+    &_p{
+        color: #504178;
+    }
+}
+
+
+.btn{
+    color: #FFF;
+    font-family: Futura;
+    font-size: 16px;
+    background-color: #A387C4;
+    padding: 20px 65px;
+    border-radius: 30px;
+    border: 2px solid #A387C4;
+    &_p{
+        background-color: #4C3D74;
+    }
+}
+
+
+
+.intro{
+    background-color: #4C3D74;
+    padding: 105px 0 182px 0;
+    &__wrap{
+        display: flex;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 760px;
+    }
+    &__text{
+        margin-bottom: 20px;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__text2{
+        margin-bottom: 45px;
+        max-width: 340px;
+    }
+    &__btns{
+        display: flex;
+        & a:not(:last-child){
+            margin-right: 24px;
+        }
+    }
+}
+
+.header{
+    margin-bottom: 10px;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+        & li:not(:last-child){
+            margin-right: 27px;
+        }
+    }
+    &__nav{
+        & img{
+            display: none;
+        }
+    }
+    &__item{
+        font-family: Futura;
+        font-size: 14px;
+        color: #FFF;
+    }
+}
+
+.signUp{
+    background-color: #FFF;
+    padding: 167px 0 0 0;
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        font-family: Futura;
+        font-size: 50px;
+        color: #504178;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        margin-bottom: 46px;
+    }
+    &__cardsBlock{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 333px;
+        height: 138px;
+        border-radius: 30px;
+        border: 3px solid #4C3D74;
+        background: #F2EEF7;
+    }
+    &__cardText{
+        color: #4C3D74;
+        font-family: Futura;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    &__cardIcon{
+        
+    }
+    &__card:not(:last-child){
+        margin-right: 26px;
+    }
+    &__text{
+        color: #4C3D74;
+        font-family: Futura;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+
+        margin-right: 33px;
+    }
+    &__btn{
+        color: #FFF;
+        font-family: Futura;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+
+        padding: 20px 65px;
+        background-color: #A387C4;
+        border-radius: 30px;
+    }
+    &__lowBox{
+        display: flex;
+        margin-top: 43px;
+        align-items: center;
+
+    }
+    &__woman{
+        margin-left: 110px;
+    }
+}
+
+
+.ad{
+    background-color: #4C3D74;
+    padding: 168px 0 176px 0;
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        color: #FFF;
+        font-family: Futura;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+
+        margin-bottom: 38px;
+    }
+    &__text{
+        color: #FFF;
+        font-family: Futura;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    &__textBlock{
+        display: flex;
+        align-items: center;
+        margin: 0 30px;
+    }
+    &__textBlock2{
+        display: flex;
+        align-items: center;
+        margin: 0 30px;
+    }
+    &__textBox{
+        display: flex;
+    }
+    &__icons{
+        margin-right: 23px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1170px){
+    .container{
+        width: unset;
+        padding: 0 20px;
+    }
+    .intro{
+        &__wrap{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .header{
+        margin-top: 50px;
+    }
+    .signUp{
+        &__title{
+            text-align: center;
+        }
+        &__cardsBlock{
+            flex-direction: column;
+        }
+        &__card{
+            margin-top: 20px;
+        }
+        &__text{
+            margin: 0 0 0 0;
+        }
+        &__btn{
+            margin-top: 30px;
+        }
+        &__lowBox{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__woman{
+            margin: 20px 0 0 0;
+        }
+    }
+    .ad{
+        &__textBox{
+            flex-direction: column;
+        }
+        &__textBlock{
+            margin: 20px 0 0 0;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .intro{
+        padding: 50px 0;
+        &__block{
+            align-items: center;
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+    .title{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .header{
+        &__menu{
+            display: none;
+        }
+        &__nav{
+            & img{
+                display: block;
+            }
+        }
+    }
+    .signUp{
+        &__title{
+            text-align: center;
+        }
+        &__cardsBlock{
+            flex-direction: column;
+        }
+        &__card{
+            margin-top: 20px;
+        }
+        &__text{
+            margin: 0 0 0 0;
+        }
+        &__btn{
+            margin-top: 30px;
+        }
+        &__lowBox{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__woman{
+            margin: 20px 0 0 0;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .title{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .intro{
+        &__block{
+            align-items: center;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__btns{
+            flex-wrap: wrap;
+            justify-content: center;
+            & a:not(:last-child){
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        &__pic{
+            width: 309px;
+            height: 309px;
+            & img{
+              width: 100%;  
+            }
+        }
+    }
+    .signUp{
+        &__title{
+            text-align: center;
+        }
+        &__cardsBlock{
+            flex-direction: column;
+        }
+        &__card{
+            margin-top: 20px;
+        }
+        &__text{
+            margin: 0 0 0 0;
+        }
+        &__btn{
+            margin-top: 30px;
+        }
+        &__lowBox{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__woman{
+            margin: 20px 0 0 0;
+        }
+    }
+}

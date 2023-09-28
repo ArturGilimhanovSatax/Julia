@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/FuturaPT-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/FuturaPT-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Futura;
+  font-size: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.title_p {
+  color: #504178;
+}
+
+.text {
+  font-family: Futura;
+  font-size: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.text_p {
+  color: #504178;
+}
+
+.btn {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 16px;
+  background-color: #A387C4;
+  padding: 20px 65px;
+  border-radius: 30px;
+  border: 2px solid #A387C4;
+}
+.btn_p {
+  background-color: #4C3D74;
+}
+
+.intro {
+  background-color: #4C3D74;
+  padding: 105px 0 182px 0;
+}
+.intro__wrap {
+  display: flex;
+}
+.intro__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 760px;
+}
+.intro__text {
+  margin-bottom: 20px;
+}
+.intro__title {
+  margin-bottom: 30px;
+}
+.intro__text2 {
+  margin-bottom: 45px;
+  max-width: 340px;
+}
+.intro__btns {
+  display: flex;
+}
+.intro__btns a:not(:last-child) {
+  margin-right: 24px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu li:not(:last-child) {
+  margin-right: 27px;
+}
+.header__nav img {
+  display: none;
+}
+.header__item {
+  font-family: Futura;
+  font-size: 14px;
+  color: #FFF;
+}
+
+.signUp {
+  background-color: #FFF;
+  padding: 167px 0 0 0;
+}
+.signUp__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signUp__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signUp__title {
+  font-family: Futura;
+  font-size: 50px;
+  color: #504178;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+}
+.signUp__cardsBlock {
+  display: flex;
+  justify-content: space-around;
+}
+.signUp__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 333px;
+  height: 138px;
+  border-radius: 30px;
+  border: 3px solid #4C3D74;
+  background: #F2EEF7;
+}
+.signUp__cardText {
+  color: #4C3D74;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.signUp__card:not(:last-child) {
+  margin-right: 26px;
+}
+.signUp__text {
+  color: #4C3D74;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 33px;
+}
+.signUp__btn {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 20px 65px;
+  background-color: #A387C4;
+  border-radius: 30px;
+}
+.signUp__lowBox {
+  display: flex;
+  margin-top: 43px;
+  align-items: center;
+}
+.signUp__woman {
+  margin-left: 110px;
+}
+
+.ad {
+  background-color: #4C3D74;
+  padding: 168px 0 176px 0;
+}
+.ad__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ad__title {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.ad__text {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.ad__textBlock {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+.ad__textBlock2 {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+.ad__textBox {
+  display: flex;
+}
+.ad__icons {
+  margin-right: 23px;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    width: unset;
+    padding: 0 20px;
+  }
+  .intro__wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header {
+    margin-top: 50px;
+  }
+  .signUp__title {
+    text-align: center;
+  }
+  .signUp__cardsBlock {
+    flex-direction: column;
+  }
+  .signUp__card {
+    margin-top: 20px;
+  }
+  .signUp__text {
+    margin: 0 0 0 0;
+  }
+  .signUp__btn {
+    margin-top: 30px;
+  }
+  .signUp__lowBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .signUp__woman {
+    margin: 20px 0 0 0;
+  }
+  .ad__textBox {
+    flex-direction: column;
+  }
+  .ad__textBlock {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    padding: 50px 0;
+  }
+  .intro__block {
+    align-items: center;
+  }
+  .intro__title {
+    text-align: center;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__nav img {
+    display: block;
+  }
+  .signUp__title {
+    text-align: center;
+  }
+  .signUp__cardsBlock {
+    flex-direction: column;
+  }
+  .signUp__card {
+    margin-top: 20px;
+  }
+  .signUp__text {
+    margin: 0 0 0 0;
+  }
+  .signUp__btn {
+    margin-top: 30px;
+  }
+  .signUp__lowBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .signUp__woman {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .intro__block {
+    align-items: center;
+  }
+  .intro__title {
+    text-align: center;
+  }
+  .intro__btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro__btns a:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .intro__pic {
+    width: 309px;
+    height: 309px;
+  }
+  .intro__pic img {
+    width: 100%;
+  }
+  .signUp__title {
+    text-align: center;
+  }
+  .signUp__cardsBlock {
+    flex-direction: column;
+  }
+  .signUp__card {
+    margin-top: 20px;
+  }
+  .signUp__text {
+    margin: 0 0 0 0;
+  }
+  .signUp__btn {
+    margin-top: 30px;
+  }
+  .signUp__lowBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .signUp__woman {
+    margin: 20px 0 0 0;
+  }
+}
